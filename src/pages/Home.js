@@ -7,6 +7,7 @@ import TendingNow from "../components/TendingNow";
 
 const HomePage = () => {
   const { Featured, TendingNow: Tending } = videoData;
+
   const [lastClickedVideo, setLastClickedVideo] = useState(null);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
 
@@ -14,7 +15,7 @@ const HomePage = () => {
     setShowVideoPlayer(false);
 
     setLastClickedVideo(video);
-    sessionStorage.setItem("lastClickedVideoId", video.id);
+    sessionStorage.setItem("lastClickedVideoId", video.Id);
 
     setTimeout(() => {
       setShowVideoPlayer(true);
