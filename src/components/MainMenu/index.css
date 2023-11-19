@@ -1,0 +1,92 @@
+.nav__cont {
+  position: fixed;
+  width: 60px;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+  background-color: #202020;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  cursor: pointer;
+  color: white;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav__cont:hover {
+  width: 300px;
+  box-shadow: 50px rgba(0, 0, 0, 0.8);
+}
+
+.user-info {
+  display: none;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #b56673;
+  border: #dbbbc0 1px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav__cont:hover .user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0 20px;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+
+  height: 70%;
+  flex-direction: column;
+}
+
+.nav:first-child {
+  padding-top: 1.5rem;
+}
+
+.nav__items span {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  padding-right: 15px;
+  transition: all 0.3s ease;
+  margin-left: 25px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 100;
+  font-size: 1.35em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav__items:hover span:after {
+  opacity: 1;
+}
+
+.nav__items {
+  padding-bottom: 3rem;
+}
+
+.nav__items img {
+  width: 26px;
+  height: 26px;
+  position: fixed;
+  left: 15px;
+  cursor: pointer;
+}
+
+.settings {
+  display: none;
+}
+.setting-list {
+  list-style-type: none;
+}
+
+.nav__cont:hover .settings {
+  display: block;
+}
